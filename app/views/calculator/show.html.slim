@@ -6,6 +6,7 @@ html
     title Calculator
     link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     link rel="stylesheet" href="styles.scss"
+    	= javascript_include_tag asset_path('calculate.js')
   body
     p Welcome
     .container
@@ -15,6 +16,8 @@ html
             .display.text-center(style='text-align: center; font-size: 3em;')
              .row.row-cols-4.g-2.mb-2
                div.rectangle
+               	div.output
+               	| 0
             .buttons
               .row.row-cols-4.g-2.mb-2
                 .col-3.col-sm-3.col-md-3
