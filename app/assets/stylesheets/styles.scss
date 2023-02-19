@@ -1,0 +1,43 @@
+@media screen and (max-width: 576px) {
+  .buttons button {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .buttons button {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 180px) {
+  .buttons button {
+    font-size: .25em;
+  }
+
+  .display {
+    text-align: center;
+  }
+}
+
+div.rectangle {
+  background-color: #fff;
+  width: calc((100% / 4) * 4 - 30px); 
+  height: 50px;
+  border: 1px solid black;
+  position: relative;
+  top: 0;
+  margin-left: auto; /* center rectangle horizontally */
+  margin-right: auto; /* center rectangle horizontally */
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.container {
+  background-color: blue;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
