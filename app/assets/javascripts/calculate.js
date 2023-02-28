@@ -6,11 +6,11 @@
 //variable function to calculate total when equal button is pressed (turn string into math equation)
 console.log('Javascript loaded');
 
-const buttonValues = [];
+let buttonValues = [];
 
-const total = [];
+let total = [];
 
-const transformation = [];
+let transformation = [];
 
 const calcButtons = document.querySelectorAll('.buttons button');
 
@@ -29,8 +29,13 @@ calcButtons.forEach(button => {
       // If the buttonValue is the equal sign, do the calculation
       console.log('Equal button clicked');
       calculateInputValues(buttonValues);
-      calculateTotal(transformation);
+      total = calculateTotal(transformation);
       buttonValues.length = 0;
+      transformation.length = 0;
+      buttonValues.push(total)
+      console.log(transformation);
+      console.log(total);
+      console.log(buttonValues);
     } else {
       // If the buttonValue is not an operator, do something else
       console.log('Non-operator button clicked');
